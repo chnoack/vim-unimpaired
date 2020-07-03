@@ -52,6 +52,10 @@ function! s:MapNextFamily(map,cmd) abort
   call s:map('n', ']'.        a:map , map.'Next')
   call s:map('n', '['.toupper(a:map), map.'First')
   call s:map('n', ']'.toupper(a:map), map.'Last')
+  call s:map('n', 'ö'.        a:map , map.'Previous')
+  call s:map('n', 'ä'.        a:map , map.'Next')
+  call s:map('n', 'Ö'.        a:map , map.'Previous')
+  call s:map('n', 'Ä'.        a:map , map.'Next')
   if exists(':'.a:cmd.'nfile')
     execute 'nnoremap <silent> '.map.'PFile :<C-U>exe "'.cmd.'pfile'.end
     execute 'nnoremap <silent> '.map.'NFile :<C-U>exe "'.cmd.'nfile'.end
