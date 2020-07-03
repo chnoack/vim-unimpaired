@@ -1,5 +1,12 @@
 # unimpaired.vim
 
+## This fork
+
+This is just a small addtion to the great unimpaired.vom plugin. Because in German keyboards the letters ``[``and ``]`` are hard to reach this fork adds ``ö``and ``ä`` for previous and last.
+
+## Original Readme
+
+
 Much of unimpaired.vim was extracted from my vimrc when I noticed a
 pattern: complementary pairs of mappings.  They mostly fall into four
 categories.
